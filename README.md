@@ -7,7 +7,7 @@ Anggota Kelompok
 3. Muhammad Yusuf Hasbullah -(1910817210003)
 4. Muhammad Rizky Maulana - (1910817210007)
 5. Aida Raima - (19108171200006)
-6. 
+6. Muhammad Faidhorrahman - (1910817210006)
 7. 
 8. 
 9. 
