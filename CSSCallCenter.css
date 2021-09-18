@@ -1,0 +1,13 @@
+tr {
+	border-radius: 20px;
+	background-color: orange;
+	color: white;
+	text-align: center;
+	margin: 2000px;
+	font-size: 20px;
+}
+caption {
+    font-size: 25px;
+    text-align: center;
+    color:aqua;
+}
