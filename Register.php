@@ -3,9 +3,7 @@
 session_start();
 header('location:index.php');
 
-$con = mysqli_connect('localhost','root','180901');
-
-mysqli_select_db($con,'userregistration');
+require_once "config.php";
 
 $name = $_POST['user'];
 $pass = $_POST['password'];
