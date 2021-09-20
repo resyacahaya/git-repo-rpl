@@ -97,7 +97,7 @@
   }
   #box-profile .img-profile{
     position: relative;
-    display: inline-block;
+    display: block;
     width: 200px;
     height: 200px;
     border-radius: 300px;
@@ -115,7 +115,7 @@
   .description{
     position: relative;
     width: 400px;
-    display: inline-block;
+    display: block;
     float: left;
     top: 50px;
     margin-left: 30px;
@@ -134,7 +134,7 @@
   }
   .information{
     position: relative;
-    display: inline-block;
+    display: block;
     float: left;
     font-family: 'Helvetica', sans-serif;
     top: 45px;
