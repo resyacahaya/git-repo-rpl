@@ -1,8 +1,4 @@
-.wrap{
-	background: blue;
-	width: 900px;
-	margin: 10px auto;
-}
+
 
 
 .wrap .header{
@@ -30,7 +26,7 @@
 
 
 .clear{
-	background-image: url("bg.JPEG")
+	background-image: url("images/bg2.JPEG")
 	clear: both;
 }
 
@@ -42,7 +38,7 @@
 
 
 .wrap .badan .content{
-	background-image: url("bg.JPEG")
+	background-image: url("images/bg2.JPEG")
 	float: left;
 	height: 100%;
 	width: 100%;	
