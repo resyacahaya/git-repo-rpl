@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styleManajemenAkun.css">
+  <title>Manajemen Akun</title>
+  <meta name = "viewport" content = "width-device-wdith,initial-scale-1.0">
+</head>
+  <body>
+    <nav>
+      <div class = "menu-mobile">
+        <a href = "#">MENU</a>
+      </div>
+      <ul>
+        <li><a href = "#">HOME</a></li>
+      </ul>
+    </nav>
+
+    <section id = "box-profile">
+      <div class = "img-profile">
+        <div class = "photo" style = "background-image: url(images/ULM.PNG)">
+        </div>
+      </div>
+      <div class = "description">
+        <h1 id = "pName">Nama</h1>
+        <p id = "pEmail">Email</p>
+        <a href= "#input-form" class = "button bg-green" onclick= "editForm()">Edit</a>
+      </div>
+      <div class = "information">
+        <div class = "data">
+          <p class = "field">Date of Birth</p>
+          <p id = "pBirth" class = "text-gray">Never</p>
+        </div>
+        <div class = "data">
+          <p class = "field">Gender</p>
+          <p id = "pGender" class = "text-gray">M/F</p>
+        </div>
+        <div class = "data">
+          <p class = "field">Address</p>
+          <p id = "pAddress" class = "text-gray">Unknown</p>
+        </div>
+        <div class = "data">
+          <p class = "field">Phone Number</p>
+          <p id ="pPhone" class = "text-gray">08xxx</p>
+        </div>
+      </div>
+    </section>
+
+    <section id = "input-form">
+     <!--<form method = "#" action ="#">-->
+        <div class = "form">
+         <label>Name</label>
+         <input id= "inpName" type = "text" name = "name">
+       </div>
+       <div class = "form">
+         <label>Date of Birth</label>
+         <input id = "inpBirth" type = "text" name = "birthdate">
+       </div>
+       <div class = "form">
+         <label>Gender</label>
+         <input id = "inpGender" type = "text" name = "gender">
+       </div>
+       <div class = "form">
+         <label>Address</label>
+         <input id = "inpAddress" type = "text" name = "address">
+       </div>
+       <div class = "form">
+         <label>Phone Number</label>
+         <input id = "inpPhone" type = "number" name= "phone">
+       </div>
+       <div class = "form">
+         <label>Email</label>
+         <input id = "inpEmail" type = "email" name = "email">
+       </div>
+       <div class = "form">
+         <input onclick = "simpanForm()" type = "submit" name= "submit" value = "SUBMIT" class = "bg-blue">
+       </div>
+     <!-- </form> -->
+   </section>
+
+    <script>
+      var foreMenu = document.getElementById("input-form");
+      foreMenu.style.display = "none";
+
+      function editForm(){
+        if(foreMenu.style.display === "none"){
+          foreMenu.style.display = "block";
+        }
+        else{
+          foreMenu.style.display = "none";
+        }
+
+        var name = document.getElementById('pName').innerHTML;
+        var email = document.getElementById('pEmail').innerHTML;
+        var birth = document.getElementById('pBirth').innerHTML;
+        var gender = document.getElementById('pGender').innerHTML;
+        var address = document.getElementById('pAddress').innerHTML;
+        var phone = document.getElementById('pPhone').innerHTML;
+
+        document.getElementById("inpName").value = name;
+        document.getElementById("inpEmail").value = email;
+        document.getElementById("inpBirth").value = birth;
+        document.getElementById("inpGender").value = gender;
+        document.getElementById("inpAddress").value = address;
+        document.getElementById("inpPhone").value = phone;
+      }
+
+      function simpanForm(){
+        foreMenu.style.display = "none";
+        var name = document.getElementById('inpName').value;
+        var email = document.getElementById('inpEmail').value;
+        var birth = document.getElementById('inpBirth').value;
+        var gender = document.getElementById('inpGender').value;
+        var address = document.getElementById('inpAddress').value;
+        var phone = document.getElementById('inpPhone').value;
+
+        document.getElementById('pName').innerHTML = name;
+        document.getElementById('pEmail').innerHTML = email;
+        document.getElementById('pBirth').innerHTML =  birth;
+        document.getElementById('pGender').innerHTML =  gender;
+        document.getElementById('pAddress').innerHTML =  address;
+        document.getElementById('pPhone').innerHTML =  phone;
+      }
+
+      function showMenu(){
+        var menu = document.getElementById("menu");
+        var box = document.getElementById("box-profile");
+
+        if(menu.style.display === "block"){
+          menu.style.display = "none";
+          box.style.paddingTop = "0px";
+        }
+        else{
+          menu.style.display = "block";
+          box.style.paddingTop = "125px";
+        }
+      }
+    </script>
+
+  </body>
+</html>
